@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://linkload-backend.onrender.com";
 
 function logout() {
   localStorage.clear();
