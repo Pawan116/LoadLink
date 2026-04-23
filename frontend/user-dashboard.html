@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard - LinkLoad</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-shell">
+  <nav class="navbar glass reveal-up">
+    <h2>LinkLoad</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <header class="dashboard-head reveal-up reveal-delay-1">
+      <h1 class="section-title">User Dashboard</h1>
+      <p class="section-subtext">Create bookings and monitor shipment status from one place.</p>
+    </header>
+
+    <section class="dash-grid">
+      <article class="form-panel glass reveal-up reveal-delay-1">
+        <h2 class="section-title">Create Booking</h2>
+        <div class="form-container">
+          <input type="text" id="pickup" placeholder="Pickup Location">
+          <input type="text" id="drop" placeholder="Drop Location">
+          <input type="text" id="loadType" placeholder="Load Type">
+          <input type="text" id="weight" placeholder="Weight">
+          <input type="text" id="truckType" placeholder="Truck Type">
+          <button onclick="createBooking()">Book Truck</button>
+        </div>
+      </article>
+
+      <article class="table-wrap glass reveal-up reveal-delay-2">
+        <h2 class="section-title">My Bookings</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Pickup</th>
+              <th>Drop</th>
+              <th>Truck</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="bookingTable"></tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+</div>
+
+<script src="js/common.js" defer></script>
+<script src="js/user.js" defer></script>
+
+</body>
+</html>

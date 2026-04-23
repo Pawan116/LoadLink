@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - LinkLoad</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-shell auth-wrap">
+  <nav class="navbar glass reveal-up">
+    <h2>LinkLoad</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+
+  <section class="auth-card glass reveal-up reveal-delay-1">
+    <p class="auth-kicker">Welcome Back</p>
+    <h1 class="auth-title">Sign in to continue shipping</h1>
+
+    <div class="form-container">
+      <select id="role">
+        <option value="users">User Login</option>
+        <option value="drivers">Driver Login</option>
+      </select>
+
+      <input type="email" id="email" placeholder="Enter Email">
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p class="muted-line">
+      Don't have an account?
+      <a href="register.html">Register</a>
+    </p>
+  </section>
+</div>
+
+<script src="js/common.js" defer></script>
+<script src="js/login.js" defer></script>
+
+</body>
+</html>

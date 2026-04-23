@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - LinkLoad</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-shell auth-wrap">
+  <nav class="navbar glass reveal-up">
+    <h2>LinkLoad</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <section class="auth-card glass reveal-up reveal-delay-1">
+    <p class="auth-kicker">Create Account</p>
+    <h1 class="auth-title">Join LinkLoad in under a minute</h1>
+
+    <div class="form-container">
+      <select id="role" onchange="toggleDriverFields()">
+        <option value="users">User Register</option>
+        <option value="drivers">Driver Register</option>
+      </select>
+
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <input type="text" id="phone" placeholder="Phone Number">
+
+      <div id="driverFields" style="display:none;">
+        <input type="text" id="vehicleNumber" placeholder="Vehicle Number">
+        <input type="text" id="truckType" placeholder="Truck Type">
+      </div>
+
+      <button onclick="register()">Register</button>
+    </div>
+
+    <p class="muted-line">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </section>
+</div>
+
+<script src="js/common.js" defer></script>
+<script src="js/register.js" defer></script>
+
+</body>
+</html>

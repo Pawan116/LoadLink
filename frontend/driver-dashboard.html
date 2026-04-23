@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Dashboard - LinkLoad</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-shell">
+  <nav class="navbar glass reveal-up">
+    <h2>LinkLoad</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <header class="dashboard-head reveal-up reveal-delay-1">
+      <h1 class="section-title">Driver Dashboard</h1>
+      <p class="section-subtext">Accept available loads and keep delivery status up to date.</p>
+    </header>
+
+    <section class="dash-grid">
+      <article class="table-wrap glass reveal-up reveal-delay-1">
+        <h2 class="section-title">Pending Loads</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Pickup</th>
+              <th>Drop</th>
+              <th>Load Type</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="pendingTable"></tbody>
+        </table>
+      </article>
+
+      <article class="form-panel glass reveal-up reveal-delay-2">
+        <h2 class="section-title">Update Delivery Status</h2>
+        <div class="form-container">
+          <input type="text" id="bookingId" placeholder="Booking ID">
+
+          <select id="status">
+            <option value="In Transit">In Transit</option>
+            <option value="Completed">Completed</option>
+          </select>
+
+          <button onclick="updateStatus()">Update Status</button>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>
+
+<script src="js/common.js" defer></script>
+<script src="js/driver.js" defer></script>
+
+</body>
+</html>
