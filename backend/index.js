@@ -16,7 +16,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/bookings", bookingRoutes);
 
 app.get("/", (req, res) => {
-  res.send("LoadLink backend is live");
+  res.send("LoadLink API Running...");
 });
 
 const PORT = process.env.PORT || 5000;
