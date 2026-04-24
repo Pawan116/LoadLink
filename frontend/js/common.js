@@ -1,4 +1,4 @@
-const BASE_URL = "https://LoadLink-backend.onrender.com";
+const BASE_URL = "https://loadlink-hd32.onrender.com";
 
 function logout() {
   localStorage.clear();
