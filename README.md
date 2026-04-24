@@ -9,7 +9,7 @@ The project was built to demonstrate backend engineering skills such as API deve
 ## Live Demo
 
 Frontend: https://loadlink-loadmanagementplatform.netlify.app/
-Backend API: https://linkload-backend.onrender.com
+Backend API: https://loadlink-hd32.onrender.com
 
 ---
 
